@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.sportsnews.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/bottom_group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/bottom_news"
+            style="@style/button_bar"
+            android:drawableTop="@drawable/botton_bar_news"
+            android:text="赛事" />
+
+        <RadioButton
+            android:id="@+id/bottom_category"
+            style="@style/button_bar"
+            android:drawableTop="@drawable/botton_bar_category"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/bottom_video"
+            style="@style/button_bar"
+            android:drawableTop="@drawable/botton_bar_video"
+            android:text="视频" />
+
+        <RadioButton
+            android:id="@+id/bottom_my"
+            style="@style/button_bar"
+            android:drawableTop="@drawable/botton_bar_my"
+            android:text="我的" />
+
+
+    </RadioGroup>
+</LinearLayout>
